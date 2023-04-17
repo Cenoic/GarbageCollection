@@ -1,0 +1,16 @@
+name: GarbageCollector
+version: '${project.version}'
+main: com.senrua.garbagecollector.GarbageCollector
+api-version: 1.19
+author: Rainie
+commands:
+  garbagecollection:
+    description: Manually triggers garbage collection or toggles automatic garbage collection.
+    usage: /<command> [on|off]
+    permission: hyronic.gc
+    permission-message: You don't have permission to use this command.
+
+permissions:
+  hyronic.gc:
+    description: Allows usage of the garbagecollection command.
+    default: op
